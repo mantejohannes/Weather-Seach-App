@@ -1,9 +1,11 @@
 import './App.css';
+
+
 import SearchLocation from './components/SearchLocation';
 
 function App() {
   return (
-    <div className="App">
+    <div className="weatherapp">
         
 
         <SearchLocation />
