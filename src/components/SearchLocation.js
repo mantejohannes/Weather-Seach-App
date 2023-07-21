@@ -32,9 +32,23 @@ function SearchLocation(){
       }
 
 
+      const formatDateTime = (timestamp) => {
+        // Convert UNIX timestamp to JavaScript Date object
+        const date = new Date(timestamp * 1000);
+    
+        // Format date and time as desired (e.g., "July 21, 2023 13:45")
+        const formattedDateTime = date.toLocaleString();
+    
+        return formattedDateTime;
+      }
+
 
     return(
         <div className="weatherapp">
+          <img className="image-logo" src="https://clipart-library.com/image_gallery2/Earth-PNG-HD.png" alt="" />
+
+            <h2 className="status">Weather Status</h2>
+
             <div className="search">
                 <input
                 value={place}
@@ -61,7 +75,7 @@ function SearchLocation(){
 
                     <div className="icon">
 
-                    {data.weather ? <img src={getWeatherIconUrl(data.weather[0].icon)} alt={data.weather[0].main} /> : null}
+                    {data.weather ? <img className="image-icon" src={getWeatherIconUrl(data.weather[0].icon)} alt={data.weather[0].main} /> : null}
 
                   </div>
 
@@ -79,9 +93,13 @@ function SearchLocation(){
                         
 
                     </div>
+                    
 
                     }
-                      
+                       {/* Display date and time */}
+      {data.dt && (
+        <p className="date-time">{formatDateTime(data.dt)}</p>
+      )}
                     </div>
 
                     
