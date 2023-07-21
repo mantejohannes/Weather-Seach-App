@@ -9,7 +9,7 @@
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .weatherapp {
@@ -63,7 +63,15 @@
   }
 
   .weatherapp .header{
-   
+    
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.2);
+
 
   }
 
@@ -75,19 +83,20 @@
   }
 
   .temperature {
-    margin-right: 10px;
+    padding-left: 5px;
   }
+
 
   .description {
     margin-top: -70px;
-    margin-left: 420px;
+    margin-left: 270px;
   }
-   .image-icon {
+   .image-icon{
     
     width: 100px; 
     height: 100px; 
     margin-top: -70px;
-    margin-left: 520px;
+    margin-left: 480px;
    
    
 }
@@ -96,6 +105,10 @@
   width: 50px; 
   height: 50px;
   margin: 25px;
+}
+.wind-speed-img{
+  width: 50px; 
+  height: 50px;
 }
 
 .status{
@@ -106,8 +119,8 @@ color: rgb(43, 143, 40);
 }
 
   .feels{
-    margin-top: -90px;
-    margin-left: 260px;
+    margin-top: -118px;
+    margin-left: 130px;
 
   }
 
@@ -131,7 +144,22 @@ color: rgb(43, 143, 40);
 }
 
 .date-time{
-padding-right: 50px;
-margin-top: 20px;
-align-items: center;
+ 
+  padding-top: 30px;
+  align-items: center;
 }
+
+.unit-button{
+
+}
+
+
+.button1 {border-radius: 2px;}
+
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+
