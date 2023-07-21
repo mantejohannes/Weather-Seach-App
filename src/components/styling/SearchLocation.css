@@ -63,17 +63,42 @@
   }
 
   .weatherapp .header{
-    width: 100%;
-    margin: 1rem auto;
+   
 
   }
 
-  .weatherapp .description{
-    position: relative;
-    right: -90%;
-    transform-origin: 0, 0;
-    transform: rotate(269deg);
+  .header {
+    /* Add flex properties to align items in a row */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .temperature {
+    /* Adjust margin, padding, or other styles as needed */
+    margin-right: 10px;
+  }
+
+  .description {
+    /* Add styles to place the description on the right of the temperature */
+    margin-top: -70px;
+    margin-left: 420px;
+  }
+   img {
+    /* Add styles to adjust the weather icon size or spacing */
+     /* Optional: Add spacing between icon and text */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-top: -70px;
+    margin-left: 520px;
 }
+
+  .feels{
+    margin-top: -90px;
+    margin-left: 260px;
+
+  }
 
 .weatherapp .footer{
     display: flex;
@@ -88,4 +113,8 @@
 
 .bold{
     font-weight: 700;
+}
+
+.error-message{
+  text-align: center;
 }
