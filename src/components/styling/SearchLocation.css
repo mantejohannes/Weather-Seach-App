@@ -84,18 +84,19 @@
 
   .temperature {
     padding-left: 5px;
+    margin-top: 65px;
   }
 
 
   .description {
-    margin-top: -70px;
+    margin-top: -110px;
     margin-left: 270px;
   }
    .image-icon{
     
     width: 100px; 
     height: 100px; 
-    margin-top: -70px;
+    margin-top: -160px;
     margin-left: 480px;
    
    
@@ -119,7 +120,7 @@ color: rgb(43, 143, 40);
 }
 
   .feels{
-    margin-top: -118px;
+    margin-top: -153px;
     margin-left: 130px;
 
   }
@@ -149,17 +150,16 @@ color: rgb(43, 143, 40);
   align-items: center;
 }
 
-.unit-button{
-
-}
 
 
-.button1 {border-radius: 2px;}
 
-
-.button1 {
-  background-color: white;
+.button1{
   color: black;
-  border: 2px solid #4CAF50; /* Green */
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding-right: 50px;
+
+
 }
 

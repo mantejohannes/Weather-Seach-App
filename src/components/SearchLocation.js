@@ -50,12 +50,19 @@ function SearchLocation(){
       const convertTemperature = (temperature) => {
         // Convert temperature from Fahrenheit to Celsius
         if (unit === "metric") {
-          return ((temperature - 32) * 5 / 9).toFixed(1);
+          return ((temperature - 32) * 5 / 9).toFixed();
         }
         // If the unit is "imperial" (Fahrenheit), return the temperature as it is
         return temperature;
       }
 
+
+      const convertFeelsLikeTemperature = (feelsLikeTemperature) => {
+        if (unit === "metric") {
+          return ((feelsLikeTemperature - 32) * 5 / 9).toFixed();
+        }
+        return feelsLikeTemperature.toFixed();
+      }
 
     return(
         <div className="weatherapp">
@@ -64,9 +71,13 @@ function SearchLocation(){
             <h2 className="status">Weather Status</h2>
 
  {/* Display temperature unit conversion button */}
-            <button className="button1" onClick={toggleUnit}>
+
+        <div className="button1">
+
+            <button type="button" class="btn btn-success float-right"  onClick={toggleUnit}>
              {unit === "imperial" ? "Convert to Celsius" : "Convert to Fahrenheit"}
              </button>
+      </div>
 
             <div className="search">
                 <input
@@ -107,7 +118,7 @@ function SearchLocation(){
 
                     <div className="feels">
                         <p>Feels like</p>
-                    {data.main ? <p className="bold">{data.main.feels_like.toFixed()}°F</p> : null }
+                    {data.main ? <p className="bold">{convertFeelsLikeTemperature(data.main.feels_like)}°{unit === "imperial" ? "F" : "C"}</p> : null }
 
                         
 
