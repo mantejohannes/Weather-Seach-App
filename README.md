@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+![image](https://github.com/mantejohannes/Weather-Seach-App/assets/125446000/6862d751-0bb4-4939-8dfc-ecb2bf2ab62c)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
