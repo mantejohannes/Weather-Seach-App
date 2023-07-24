@@ -71,7 +71,6 @@ function SearchLocation(){
             <h2 className="status">Weather Status</h2>
 
  {/* Display temperature unit conversion button */}
-
         <div className="button1">
 
             <button type="button" class="btn btn-success float-right"  onClick={toggleUnit}>
