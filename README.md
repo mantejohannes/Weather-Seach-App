@@ -3,7 +3,14 @@
 
 
 ![image](https://github.com/mantejohannes/Weather-Seach-App/assets/125446000/0740d87e-0bf8-4aac-a9d7-9074d7cb36f7)
+
+
+
+![image](https://github.com/mantejohannes/Weather-Seach-App/assets/125446000/4a64bf0e-9d5a-47ff-aeb3-a3002d887aa1)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+
 
 ## Available Scripts
 
