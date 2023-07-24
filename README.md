@@ -7,6 +7,8 @@
 
 
 ![image](https://github.com/mantejohannes/Weather-Seach-App/assets/125446000/4a64bf0e-9d5a-47ff-aeb3-a3002d887aa1)
+
+![image](https://github.com/mantejohannes/Weather-Seach-App/assets/125446000/146f134e-eec6-49d7-aaec-385bb63157f2)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
